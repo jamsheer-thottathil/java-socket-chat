@@ -207,6 +207,39 @@ button.accent {
     color: #43464b;
 }
 
+#chat-page .right-message {
+    text-align: right;
+    padding-right: 68px;
+    position: relative;
+}
+
+#chat-page .right-message i {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+#chat-page .right-message span {
+    color: #333;
+    font-weight: 600;
+}
+
+#chat-page .right-message p {
+    color: #43464b;
+}
+
+
 #messageForm .input-group input {
     float: left;
     width: calc(100% - 85px);
