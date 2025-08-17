@@ -1,15 +1,10 @@
 package com.alibou.websocket.chat;
 
-import com.alibou.websocket.config.WebSocketConfig;
-
-import java.util.List;
-
 import com.alibou.websocket.tools.OrderTool;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.ai.chat.memory.ChatMemory;
+import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.prompt.Prompt;
-import org.springframework.ai.ollama.OllamaChatModel;
-import org.springframework.ai.ollama.api.OllamaOptions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
@@ -26,8 +21,11 @@ public class ChatController {
     @Autowired
     ChatClient chatClient;
 
+    @Autowired
+    ChatMemory chatMemory;
 
     private final SimpMessageSendingOperations messagingTemplate;
+    private final String nothink = "/nothink ";
 
     // Constructor injection
     public ChatController(SimpMessageSendingOperations messagingTemplate) {
@@ -39,11 +37,18 @@ public class ChatController {
         System.out.println("----------------Received-----------------");
         // Forward the user message
         messagingTemplate.convertAndSend("/topic/public", chatMessage);
-        String response = chatClient.prompt(chatMessage.getContent()).tools(orderTool).call().content();
+        // Create a user message
+        UserMessage userMessage = new UserMessage(nothink + chatMessage.getContent());
+
+        // Create a prompt with the user message
+        Prompt prompt = new Prompt(userMessage);
+        String response = chatClient.prompt(prompt)
+                .tools(orderTool)
+                .call().content();
 
         // Automated bot reply
         ChatMessage botReply = ChatMessage.builder().type(MessageType.CHAT).sender("BOT")
-                .content(response).build();
+                .content(response.replaceAll("</?think>", "").trim()).build();
 
         messagingTemplate.convertAndSend("/topic/public", botReply);
 
@@ -52,6 +57,7 @@ public class ChatController {
     @MessageMapping("/chat.addUser")
     public void addUser(@Payload ChatMessage chatMessage, SimpMessageHeaderAccessor headerAccessor) {
         headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        chatMemory.clear("order response");
         messagingTemplate.convertAndSend("/topic/public", chatMessage);
     }
 }
