@@ -21,10 +21,10 @@ import org.springframework.stereotype.Controller;
 public class ChatController {
 
     @Autowired
-    OllamaChatModel model;
+    OrderTool orderTool;
 
     @Autowired
-    OrderTool orderTool;
+    ChatClient chatClient;
 
 
     private final SimpMessageSendingOperations messagingTemplate;
@@ -39,7 +39,7 @@ public class ChatController {
         System.out.println("----------------Received-----------------");
         // Forward the user message
         messagingTemplate.convertAndSend("/topic/public", chatMessage);
-        String response = ChatClient.create(model).prompt(chatMessage.getContent()).tools(orderTool).call().content();
+        String response = chatClient.prompt(chatMessage.getContent()).tools(orderTool).call().content();
 
         // Automated bot reply
         ChatMessage botReply = ChatMessage.builder().type(MessageType.CHAT).sender("BOT")

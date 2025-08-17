@@ -21,6 +21,7 @@ public class OrderTool {
         System.out.println("Tool called with orderId: " + orderId);
         Optional<Order> order = orderRepository.findById(orderId);
         if (order.isPresent()) {
+            System.out.println("Order Details : " + order.get().toJson());
             return order.get().toJson();
         }
         return "Order not found. Please enter a valid order id";
