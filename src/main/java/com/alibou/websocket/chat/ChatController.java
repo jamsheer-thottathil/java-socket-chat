@@ -23,6 +23,9 @@ public class ChatController {
     @Autowired
     OllamaChatModel model;
 
+    @Autowired
+    OrderTool orderTool;
+
 
     private final SimpMessageSendingOperations messagingTemplate;
 
@@ -36,7 +39,7 @@ public class ChatController {
         System.out.println("----------------Received-----------------");
         // Forward the user message
         messagingTemplate.convertAndSend("/topic/public", chatMessage);
-        String response = ChatClient.create(model).prompt(chatMessage.getContent()).tools(new OrderTool()).call().content();
+        String response = ChatClient.create(model).prompt(chatMessage.getContent()).tools(orderTool).call().content();
 
         // Automated bot reply
         ChatMessage botReply = ChatMessage.builder().type(MessageType.CHAT).sender("BOT")
