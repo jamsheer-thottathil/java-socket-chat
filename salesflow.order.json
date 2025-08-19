@@ -1,0 +1,1400 @@
+[{
+  "_id": "SHOP:33542:4",
+  "customer": {
+    "customerId": "CUST001",
+    "firstName": "John",
+    "lastName": "Taylor",
+    "email": "john.taylor@example.com",
+    "phone": "+1-555-1001"
+  },
+  "products": [
+    {
+      "productId": "P1000",
+      "name": "Product 1",
+      "sku": "SKU-001",
+      "category": "Pipes",
+      "price": 111.53,
+      "quantity": 3,
+      "total": 334.59
+    }
+  ],
+  "payment": {
+    "method": "PayPal",
+    "transactionId": "TXN1000",
+    "status": "Pending",
+    "amount": 115.02,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "971 Main St",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "85314",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "407 Main St",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "58160",
+    "country": "USA"
+  },
+  "orderStatus": "Processing",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1000",
+    "estimatedDelivery": {
+      "$date": "2025-08-11T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-01T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-04T01:00:00.000Z"
+  }
+},
+{
+  "_id": "SUPP:67103:4",
+  "customer": {
+    "customerId": "CUST002",
+    "firstName": "Emily",
+    "lastName": "White",
+    "email": "emily.white@example.com",
+    "phone": "+1-555-1002"
+  },
+  "products": [
+    {
+      "productId": "P1001",
+      "name": "Product 2",
+      "sku": "SKU-002",
+      "category": "Pipes",
+      "price": 40.79,
+      "quantity": 2,
+      "total": 81.58
+    }
+  ],
+  "payment": {
+    "method": "PayPal",
+    "transactionId": "TXN1001",
+    "status": "Refunded",
+    "amount": 269.56,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "987 Main St",
+    "city": "Denver",
+    "state": "MA",
+    "postalCode": "72994",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "630 Main St",
+    "city": "Denver",
+    "state": "MA",
+    "postalCode": "90220",
+    "country": "USA"
+  },
+  "orderStatus": "Pending",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1001",
+    "estimatedDelivery": {
+      "$date": "2025-08-05T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-02T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-02T22:00:00.000Z"
+  }
+},
+{
+  "_id": "SHOP:64753:4",
+  "customer": {
+    "customerId": "CUST003",
+    "firstName": "Alice",
+    "lastName": "Davis",
+    "email": "alice.davis@example.com",
+    "phone": "+1-555-1003"
+  },
+  "products": [
+    {
+      "productId": "P1002",
+      "name": "Product 3",
+      "sku": "SKU-003",
+      "category": "Pipes",
+      "price": 185.37,
+      "quantity": 3,
+      "total": 556.11
+    }
+  ],
+  "payment": {
+    "method": "Debit Card",
+    "transactionId": "TXN1002",
+    "status": "Pending",
+    "amount": 376.3,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "273 Main St",
+    "city": "Denver",
+    "state": "CA",
+    "postalCode": "25473",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "563 Main St",
+    "city": "Denver",
+    "state": "CA",
+    "postalCode": "38513",
+    "country": "USA"
+  },
+  "orderStatus": "Pending",
+  "shipping": {
+    "carrier": "UPS",
+    "trackingNumber": "TRK1002",
+    "estimatedDelivery": {
+      "$date": "2025-08-13T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-03T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-04T05:00:00.000Z"
+  }
+},
+{
+  "_id": "SHOP:77192:4",
+  "customer": {
+    "customerId": "CUST004",
+    "firstName": "Olivia",
+    "lastName": "Doe",
+    "email": "olivia.doe@example.com",
+    "phone": "+1-555-1004"
+  },
+  "products": [
+    {
+      "productId": "P1003",
+      "name": "Product 4",
+      "sku": "SKU-004",
+      "category": "Pipes",
+      "price": 63.2,
+      "quantity": 4,
+      "total": 252.8
+    }
+  ],
+  "payment": {
+    "method": "Bank Transfer",
+    "transactionId": "TXN1003",
+    "status": "Refunded",
+    "amount": 244.33,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "370 Main St",
+    "city": "Boston",
+    "state": "CO",
+    "postalCode": "50877",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "847 Main St",
+    "city": "Boston",
+    "state": "CO",
+    "postalCode": "80533",
+    "country": "USA"
+  },
+  "orderStatus": "Shipped",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1003",
+    "estimatedDelivery": {
+      "$date": "2025-08-11T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-04T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-05T12:00:00.000Z"
+  }
+},
+{
+  "_id": "DIST:23929:4",
+  "customer": {
+    "customerId": "CUST005",
+    "firstName": "Michael",
+    "lastName": "Taylor",
+    "email": "michael.taylor@example.com",
+    "phone": "+1-555-1005"
+  },
+  "products": [
+    {
+      "productId": "P1004",
+      "name": "Product 5",
+      "sku": "SKU-005",
+      "category": "Plumbing",
+      "price": 60.96,
+      "quantity": 1,
+      "total": 60.96
+    }
+  ],
+  "payment": {
+    "method": "Bank Transfer",
+    "transactionId": "TXN1004",
+    "status": "Paid",
+    "amount": 142.73,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "192 Main St",
+    "city": "New York",
+    "state": "CO",
+    "postalCode": "76830",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "973 Main St",
+    "city": "New York",
+    "state": "CO",
+    "postalCode": "69635",
+    "country": "USA"
+  },
+  "orderStatus": "Processing",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1004",
+    "estimatedDelivery": {
+      "$date": "2025-08-10T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-05T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-05T14:00:00.000Z"
+  }
+},
+{
+  "_id": "PLUMB:4411:4",
+  "customer": {
+    "customerId": "CUST006",
+    "firstName": "Michael",
+    "lastName": "Anderson",
+    "email": "michael.anderson@example.com",
+    "phone": "+1-555-1006"
+  },
+  "products": [
+    {
+      "productId": "P1005",
+      "name": "Product 6",
+      "sku": "SKU-006",
+      "category": "Plumbing",
+      "price": 37.18,
+      "quantity": 3,
+      "total": 111.54
+    }
+  ],
+  "payment": {
+    "method": "Bank Transfer",
+    "transactionId": "TXN1005",
+    "status": "Pending",
+    "amount": 278.64,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "306 Main St",
+    "city": "San Diego",
+    "state": "MA",
+    "postalCode": "98200",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "865 Main St",
+    "city": "San Diego",
+    "state": "MA",
+    "postalCode": "20867",
+    "country": "USA"
+  },
+  "orderStatus": "Delivered",
+  "shipping": {
+    "carrier": "UPS",
+    "trackingNumber": "TRK1005",
+    "estimatedDelivery": {
+      "$date": "2025-08-11T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-06T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-06T18:00:00.000Z"
+  }
+},
+{
+  "_id": "DIST:93488:4",
+  "customer": {
+    "customerId": "CUST007",
+    "firstName": "Ava",
+    "lastName": "Doe",
+    "email": "ava.doe@example.com",
+    "phone": "+1-555-1007"
+  },
+  "products": [
+    {
+      "productId": "P1006",
+      "name": "Product 7",
+      "sku": "SKU-007",
+      "category": "Bathroom",
+      "price": 81.46,
+      "quantity": 5,
+      "total": 407.3
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1006",
+    "status": "Pending",
+    "amount": 482.13,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "929 Main St",
+    "city": "Los Angeles",
+    "state": "CO",
+    "postalCode": "22290",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "836 Main St",
+    "city": "Los Angeles",
+    "state": "CO",
+    "postalCode": "75070",
+    "country": "USA"
+  },
+  "orderStatus": "Cancelled",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1006",
+    "estimatedDelivery": {
+      "$date": "2025-08-15T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-07T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-08T23:00:00.000Z"
+  }
+},
+{
+  "_id": "SUPP:71289:4",
+  "customer": {
+    "customerId": "CUST008",
+    "firstName": "David",
+    "lastName": "Taylor",
+    "email": "david.taylor@example.com",
+    "phone": "+1-555-1008"
+  },
+  "products": [
+    {
+      "productId": "P1007",
+      "name": "Product 8",
+      "sku": "SKU-008",
+      "category": "Plumbing",
+      "price": 198.67,
+      "quantity": 1,
+      "total": 198.67
+    }
+  ],
+  "payment": {
+    "method": "PayPal",
+    "transactionId": "TXN1007",
+    "status": "Paid",
+    "amount": 207.58,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "546 Main St",
+    "city": "New York",
+    "state": "WA",
+    "postalCode": "80386",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "25 Main St",
+    "city": "New York",
+    "state": "WA",
+    "postalCode": "96646",
+    "country": "USA"
+  },
+  "orderStatus": "Shipped",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1007",
+    "estimatedDelivery": {
+      "$date": "2025-08-11T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-08T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-09T19:00:00.000Z"
+  }
+},
+{
+  "_id": "PLUMB:42347:4",
+  "customer": {
+    "customerId": "CUST009",
+    "firstName": "Sophia",
+    "lastName": "Thomas",
+    "email": "sophia.thomas@example.com",
+    "phone": "+1-555-1009"
+  },
+  "products": [
+    {
+      "productId": "P1008",
+      "name": "Product 9",
+      "sku": "SKU-009",
+      "category": "Plumbing",
+      "price": 47.72,
+      "quantity": 5,
+      "total": 238.6
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1008",
+    "status": "Refunded",
+    "amount": 458.12,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "573 Main St",
+    "city": "San Diego",
+    "state": "CO",
+    "postalCode": "21655",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "301 Main St",
+    "city": "San Diego",
+    "state": "CO",
+    "postalCode": "22023",
+    "country": "USA"
+  },
+  "orderStatus": "Delivered",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1008",
+    "estimatedDelivery": {
+      "$date": "2025-08-12T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-09T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-10T04:00:00.000Z"
+  }
+},
+{
+  "_id": "PLUMB:9107:4",
+  "customer": {
+    "customerId": "CUST010",
+    "firstName": "Daniel",
+    "lastName": "Doe",
+    "email": "daniel.doe@example.com",
+    "phone": "+1-555-1010"
+  },
+  "products": [
+    {
+      "productId": "P1009",
+      "name": "Product 10",
+      "sku": "SKU-010",
+      "category": "Fittings",
+      "price": 139.85,
+      "quantity": 5,
+      "total": 699.25
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1009",
+    "status": "Paid",
+    "amount": 439.87,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "856 Main St",
+    "city": "Boston",
+    "state": "IL",
+    "postalCode": "91280",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "162 Main St",
+    "city": "Boston",
+    "state": "IL",
+    "postalCode": "49979",
+    "country": "USA"
+  },
+  "orderStatus": "Shipped",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1009",
+    "estimatedDelivery": {
+      "$date": "2025-08-17T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-10T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-11T08:00:00.000Z"
+  }
+},
+{
+  "_id": "PLUMB:40432:4",
+  "customer": {
+    "customerId": "CUST011",
+    "firstName": "Emily",
+    "lastName": "Anderson",
+    "email": "emily.anderson@example.com",
+    "phone": "+1-555-1011"
+  },
+  "products": [
+    {
+      "productId": "P1010",
+      "name": "Product 11",
+      "sku": "SKU-011",
+      "category": "Pipes",
+      "price": 129.32,
+      "quantity": 2,
+      "total": 258.64
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1010",
+    "status": "Paid",
+    "amount": 240.16,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "86 Main St",
+    "city": "Denver",
+    "state": "CA",
+    "postalCode": "99682",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "246 Main St",
+    "city": "Denver",
+    "state": "CA",
+    "postalCode": "58305",
+    "country": "USA"
+  },
+  "orderStatus": "Delivered",
+  "shipping": {
+    "carrier": "UPS",
+    "trackingNumber": "TRK1010",
+    "estimatedDelivery": {
+      "$date": "2025-08-18T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-11T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-12T05:00:00.000Z"
+  }
+},
+{
+  "_id": "SUPP:13047:4",
+  "customer": {
+    "customerId": "CUST012",
+    "firstName": "Olivia",
+    "lastName": "White",
+    "email": "olivia.white@example.com",
+    "phone": "+1-555-1012"
+  },
+  "products": [
+    {
+      "productId": "P1011",
+      "name": "Product 12",
+      "sku": "SKU-012",
+      "category": "Pipes",
+      "price": 50.89,
+      "quantity": 5,
+      "total": 254.45
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1011",
+    "status": "Paid",
+    "amount": 421.32,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "72 Main St",
+    "city": "Seattle",
+    "state": "CO",
+    "postalCode": "94347",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "17 Main St",
+    "city": "Seattle",
+    "state": "CO",
+    "postalCode": "82955",
+    "country": "USA"
+  },
+  "orderStatus": "Pending",
+  "shipping": {
+    "carrier": "UPS",
+    "trackingNumber": "TRK1011",
+    "estimatedDelivery": {
+      "$date": "2025-08-20T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-12T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-13T15:00:00.000Z"
+  }
+},
+{
+  "_id": "SHOP:9405:4",
+  "customer": {
+    "customerId": "CUST013",
+    "firstName": "Daniel",
+    "lastName": "Doe",
+    "email": "daniel.doe@example.com",
+    "phone": "+1-555-1013"
+  },
+  "products": [
+    {
+      "productId": "P1012",
+      "name": "Product 13",
+      "sku": "SKU-013",
+      "category": "Pipes",
+      "price": 185.84,
+      "quantity": 2,
+      "total": 371.68
+    }
+  ],
+  "payment": {
+    "method": "Debit Card",
+    "transactionId": "TXN1012",
+    "status": "Refunded",
+    "amount": 420.82,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "215 Main St",
+    "city": "Dallas",
+    "state": "CA",
+    "postalCode": "16955",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "542 Main St",
+    "city": "Dallas",
+    "state": "CA",
+    "postalCode": "11456",
+    "country": "USA"
+  },
+  "orderStatus": "Shipped",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1012",
+    "estimatedDelivery": {
+      "$date": "2025-08-19T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-13T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-13T23:00:00.000Z"
+  }
+},
+{
+  "_id": "DIST:20314:4",
+  "customer": {
+    "customerId": "CUST014",
+    "firstName": "Daniel",
+    "lastName": "Smith",
+    "email": "daniel.smith@example.com",
+    "phone": "+1-555-1014"
+  },
+  "products": [
+    {
+      "productId": "P1013",
+      "name": "Product 14",
+      "sku": "SKU-014",
+      "category": "Bathroom",
+      "price": 76.72,
+      "quantity": 2,
+      "total": 153.44
+    }
+  ],
+  "payment": {
+    "method": "PayPal",
+    "transactionId": "TXN1013",
+    "status": "Pending",
+    "amount": 232.83,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "525 Main St",
+    "city": "Miami",
+    "state": "CA",
+    "postalCode": "89130",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "22 Main St",
+    "city": "Miami",
+    "state": "CA",
+    "postalCode": "66368",
+    "country": "USA"
+  },
+  "orderStatus": "Pending",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1013",
+    "estimatedDelivery": {
+      "$date": "2025-08-18T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-14T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-15T03:00:00.000Z"
+  }
+},
+{
+  "_id": "PLUMB:52463:4",
+  "customer": {
+    "customerId": "CUST015",
+    "firstName": "James",
+    "lastName": "Smith",
+    "email": "james.smith@example.com",
+    "phone": "+1-555-1015"
+  },
+  "products": [
+    {
+      "productId": "P1014",
+      "name": "Product 15",
+      "sku": "SKU-015",
+      "category": "Fittings",
+      "price": 128.61,
+      "quantity": 3,
+      "total": 385.83
+    }
+  ],
+  "payment": {
+    "method": "Debit Card",
+    "transactionId": "TXN1014",
+    "status": "Refunded",
+    "amount": 270.52,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "893 Main St",
+    "city": "Miami",
+    "state": "TX",
+    "postalCode": "62891",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "333 Main St",
+    "city": "Miami",
+    "state": "TX",
+    "postalCode": "96125",
+    "country": "USA"
+  },
+  "orderStatus": "Shipped",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1014",
+    "estimatedDelivery": {
+      "$date": "2025-08-18T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-15T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-16T19:00:00.000Z"
+  }
+},
+{
+  "_id": "DIST:2985:4",
+  "customer": {
+    "customerId": "CUST016",
+    "firstName": "Sophia",
+    "lastName": "Wilson",
+    "email": "sophia.wilson@example.com",
+    "phone": "+1-555-1016"
+  },
+  "products": [
+    {
+      "productId": "P1015",
+      "name": "Product 16",
+      "sku": "SKU-016",
+      "category": "Bathroom",
+      "price": 188.92,
+      "quantity": 3,
+      "total": 566.76
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1015",
+    "status": "Pending",
+    "amount": 188.14,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "551 Main St",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postalCode": "97427",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "845 Main St",
+    "city": "Los Angeles",
+    "state": "CA",
+    "postalCode": "64903",
+    "country": "USA"
+  },
+  "orderStatus": "Cancelled",
+  "shipping": {
+    "carrier": "USPS",
+    "trackingNumber": "TRK1015",
+    "estimatedDelivery": {
+      "$date": "2025-08-26T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-16T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-16T20:00:00.000Z"
+  }
+},
+{
+  "_id": "SHOP:26212:4",
+  "customer": {
+    "customerId": "CUST017",
+    "firstName": "Daniel",
+    "lastName": "Smith",
+    "email": "daniel.smith@example.com",
+    "phone": "+1-555-1017"
+  },
+  "products": [
+    {
+      "productId": "P1016",
+      "name": "Product 17",
+      "sku": "SKU-017",
+      "category": "Fittings",
+      "price": 146.33,
+      "quantity": 4,
+      "total": 585.32
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1016",
+    "status": "Pending",
+    "amount": 311.15,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "651 Main St",
+    "city": "Dallas",
+    "state": "CO",
+    "postalCode": "25618",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "257 Main St",
+    "city": "Dallas",
+    "state": "CO",
+    "postalCode": "10021",
+    "country": "USA"
+  },
+  "orderStatus": "Shipped",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1016",
+    "estimatedDelivery": {
+      "$date": "2025-08-20T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-17T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-18T03:00:00.000Z"
+  }
+},
+{
+  "_id": "DIST:53713:4",
+  "customer": {
+    "customerId": "CUST018",
+    "firstName": "Ava",
+    "lastName": "White",
+    "email": "ava.white@example.com",
+    "phone": "+1-555-1018"
+  },
+  "products": [
+    {
+      "productId": "P1017",
+      "name": "Product 18",
+      "sku": "SKU-018",
+      "category": "Pipes",
+      "price": 100.18,
+      "quantity": 3,
+      "total": 300.54
+    }
+  ],
+  "payment": {
+    "method": "Credit Card",
+    "transactionId": "TXN1017",
+    "status": "Refunded",
+    "amount": 315.34,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "577 Main St",
+    "city": "Miami",
+    "state": "CA",
+    "postalCode": "56229",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "371 Main St",
+    "city": "Miami",
+    "state": "CA",
+    "postalCode": "50104",
+    "country": "USA"
+  },
+  "orderStatus": "Pending",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1017",
+    "estimatedDelivery": {
+      "$date": "2025-08-26T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-18T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-20T20:00:00.000Z"
+  }
+},
+{
+  "_id": "SUPP:89957:4",
+  "customer": {
+    "customerId": "CUST019",
+    "firstName": "David",
+    "lastName": "Thomas",
+    "email": "david.thomas@example.com",
+    "phone": "+1-555-1019"
+  },
+  "products": [
+    {
+      "productId": "P1018",
+      "name": "Product 19",
+      "sku": "SKU-019",
+      "category": "Pipes",
+      "price": 151.82,
+      "quantity": 4,
+      "total": 607.28
+    }
+  ],
+  "payment": {
+    "method": "Bank Transfer",
+    "transactionId": "TXN1018",
+    "status": "Paid",
+    "amount": 346.88,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "788 Main St",
+    "city": "San Diego",
+    "state": "CO",
+    "postalCode": "51677",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "812 Main St",
+    "city": "San Diego",
+    "state": "CO",
+    "postalCode": "79737",
+    "country": "USA"
+  },
+  "orderStatus": "Cancelled",
+  "shipping": {
+    "carrier": "UPS",
+    "trackingNumber": "TRK1018",
+    "estimatedDelivery": {
+      "$date": "2025-08-29T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-19T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-20T11:00:00.000Z"
+  }
+},
+{
+  "_id": "WARE:82355:4",
+  "customer": {
+    "customerId": "CUST020",
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "email": "michael.brown@example.com",
+    "phone": "+1-555-1020"
+  },
+  "products": [
+    {
+      "productId": "P1019",
+      "name": "Product 20",
+      "sku": "SKU-020",
+      "category": "Pipes",
+      "price": 145.15,
+      "quantity": 3,
+      "total": 435.45
+    }
+  ],
+  "payment": {
+    "method": "Bank Transfer",
+    "transactionId": "TXN1019",
+    "status": "Pending",
+    "amount": 414.2,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "832 Main St",
+    "city": "Boston",
+    "state": "CA",
+    "postalCode": "23181",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "858 Main St",
+    "city": "Boston",
+    "state": "CA",
+    "postalCode": "21705",
+    "country": "USA"
+  },
+  "orderStatus": "Shipped",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1019",
+    "estimatedDelivery": {
+      "$date": "2025-08-26T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-20T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T08:00:00.000Z"
+  }
+},
+{
+  "_id": "WARE:83116:4",
+  "customer": {
+    "customerId": "CUST021",
+    "firstName": "Alice",
+    "lastName": "Doe",
+    "email": "alice.doe@example.com",
+    "phone": "+1-555-1021"
+  },
+  "products": [
+    {
+      "productId": "P1020",
+      "name": "Product 21",
+      "sku": "SKU-021",
+      "category": "Plumbing",
+      "price": 166.22,
+      "quantity": 3,
+      "total": 498.66
+    }
+  ],
+  "payment": {
+    "method": "Bank Transfer",
+    "transactionId": "TXN1020",
+    "status": "Refunded",
+    "amount": 459.98,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "262 Main St",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "77222",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "764 Main St",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "16203",
+    "country": "USA"
+  },
+  "orderStatus": "Delivered",
+  "shipping": {
+    "carrier": "UPS",
+    "trackingNumber": "TRK1020",
+    "estimatedDelivery": {
+      "$date": "2025-08-24T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-21T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-22T20:00:00.000Z"
+  }
+},
+{
+  "_id": "SUPP:84553:4",
+  "customer": {
+    "customerId": "CUST022",
+    "firstName": "Ava",
+    "lastName": "Wilson",
+    "email": "ava.wilson@example.com",
+    "phone": "+1-555-1022"
+  },
+  "products": [
+    {
+      "productId": "P1021",
+      "name": "Product 22",
+      "sku": "SKU-022",
+      "category": "Pipes",
+      "price": 116.41,
+      "quantity": 1,
+      "total": 116.41
+    }
+  ],
+  "payment": {
+    "method": "Bank Transfer",
+    "transactionId": "TXN1021",
+    "status": "Paid",
+    "amount": 314.73,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "911 Main St",
+    "city": "Miami",
+    "state": "TX",
+    "postalCode": "16090",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "35 Main St",
+    "city": "Miami",
+    "state": "TX",
+    "postalCode": "36290",
+    "country": "USA"
+  },
+  "orderStatus": "Pending",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1021",
+    "estimatedDelivery": {
+      "$date": "2025-08-26T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-22T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T22:00:00.000Z"
+  }
+},
+{
+  "_id": "SHOP:48354:4",
+  "customer": {
+    "customerId": "CUST023",
+    "firstName": "Emily",
+    "lastName": "Wilson",
+    "email": "emily.wilson@example.com",
+    "phone": "+1-555-1023"
+  },
+  "products": [
+    {
+      "productId": "P1022",
+      "name": "Product 23",
+      "sku": "SKU-023",
+      "category": "Plumbing",
+      "price": 89.63,
+      "quantity": 1,
+      "total": 89.63
+    }
+  ],
+  "payment": {
+    "method": "PayPal",
+    "transactionId": "TXN1022",
+    "status": "Paid",
+    "amount": 456.94,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "685 Main St",
+    "city": "San Diego",
+    "state": "CA",
+    "postalCode": "74493",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "242 Main St",
+    "city": "San Diego",
+    "state": "CA",
+    "postalCode": "85548",
+    "country": "USA"
+  },
+  "orderStatus": "Processing",
+  "shipping": {
+    "carrier": "FedEx",
+    "trackingNumber": "TRK1022",
+    "estimatedDelivery": {
+      "$date": "2025-08-28T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-23T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T22:00:00.000Z"
+  }
+},
+{
+  "_id": "PLUMB:14991:4",
+  "customer": {
+    "customerId": "CUST024",
+    "firstName": "Olivia",
+    "lastName": "Jackson",
+    "email": "olivia.jackson@example.com",
+    "phone": "+1-555-1024"
+  },
+  "products": [
+    {
+      "productId": "P1023",
+      "name": "Product 24",
+      "sku": "SKU-024",
+      "category": "Plumbing",
+      "price": 158.19,
+      "quantity": 3,
+      "total": 474.57
+    }
+  ],
+  "payment": {
+    "method": "PayPal",
+    "transactionId": "TXN1023",
+    "status": "Pending",
+    "amount": 323.1,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "52 Main St",
+    "city": "Denver",
+    "state": "CO",
+    "postalCode": "59338",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "788 Main St",
+    "city": "Denver",
+    "state": "CO",
+    "postalCode": "74389",
+    "country": "USA"
+  },
+  "orderStatus": "Delivered",
+  "shipping": {
+    "carrier": "USPS",
+    "trackingNumber": "TRK1023",
+    "estimatedDelivery": {
+      "$date": "2025-08-31T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-24T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-24T11:00:00.000Z"
+  }
+},
+{
+  "_id": "SUPP:58975:4",
+  "customer": {
+    "customerId": "CUST025",
+    "firstName": "Ava",
+    "lastName": "Anderson",
+    "email": "ava.anderson@example.com",
+    "phone": "+1-555-1025"
+  },
+  "products": [
+    {
+      "productId": "P1024",
+      "name": "Product 25",
+      "sku": "SKU-025",
+      "category": "Pipes",
+      "price": 63.86,
+      "quantity": 5,
+      "total": 319.3
+    }
+  ],
+  "payment": {
+    "method": "PayPal",
+    "transactionId": "TXN1024",
+    "status": "Pending",
+    "amount": 427.93,
+    "currency": "USD"
+  },
+  "shippingAddress": {
+    "line1": "87 Main St",
+    "city": "Dallas",
+    "state": "WA",
+    "postalCode": "99655",
+    "country": "USA"
+  },
+  "billingAddress": {
+    "line1": "439 Main St",
+    "city": "Dallas",
+    "state": "WA",
+    "postalCode": "33255",
+    "country": "USA"
+  },
+  "orderStatus": "Delivered",
+  "shipping": {
+    "carrier": "DHL",
+    "trackingNumber": "TRK1024",
+    "estimatedDelivery": {
+      "$date": "2025-08-31T09:00:00.000Z"
+    }
+  },
+  "createdAt": {
+    "$date": "2025-08-25T09:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-28T00:00:00.000Z"
+  }
+}]
